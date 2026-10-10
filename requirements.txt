@@ -1,0 +1,7 @@
+# Legacy mp.solutions.pose runtime, smoke-tested with Python 3.12 on Linux x86-64.
+# MediaPipe 0.10.31+ removed the legacy API. See docs/limitations.md.
+# Use contrib only; do not also install opencv-python into this environment.
+mediapipe==0.10.21
+opencv-contrib-python==4.11.0.86
+numpy==1.26.4
+pandas==3.0.6
