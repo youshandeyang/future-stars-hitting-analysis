@@ -4,6 +4,17 @@
 
 Published with the family's explicit authorization on October 21, 2026. This is a coaching-method case study, not an independently reproduced run of the public Python script or an automatic-scoring demonstration.
 
+## Who did what
+
+This demo shows a **coaching and retest process guided by Vincent's baseball experience**, supported by his family and AI tools/agents. It is not a claim that Vincent personally programmed the Python analyzer.
+
+- **Vincent:** identified patterns such as step-across, arms moving together and early barrel wrap; offered training priorities and coach notes; and contributed to the evaluation of the retest.
+- **Family:** supported filming and the organization of the video/report evidence.
+- **AI/Agent tools:** supported software coding and helped prepare analysis/report material. Their output was not treated as independently verified motion science.
+- **Public Python V3:** can attempt selected 2D landmark-angle exports; it does not generate the six-category scores or automatically evaluate the longitudinal change.
+
+**Goal:** help families use video and affordable equipment to understand and test one or two training adjustments. The 34/60 to 38/60 values are report-based, retrospectively aligned coach ratings—not automatic code output, a measured increase in bat speed, or proof that a specific drill caused improvement.
+
 ## Included evidence
 
 - Baseline side-tee recording: August 12, 2026; supplied excerpt begins around 41.9 seconds of the original.
