@@ -4,6 +4,26 @@ A student-led, low-cost project exploring how ordinary home video can help young
 
 **Project lead:** Vincent Hall, founder of Future Stars Baseball Club
 
+**Public code:** Python, MediaPipe Pose, OpenCV
+
+**Project website:** [Coaching-to-coding overview](https://www.futurestarsbaseballclub.org/ai-analysis.html)
+
+## At a glance
+
+The project connects a human-led coaching and retesting method with an experimental Python tool for selected 2D movement measurements. The public prototype is not a validated biomechanics system or a fully automated coaching application.
+
+| Part | What is available now | Evidence and limits |
+| --- | --- | --- |
+| Video review and retesting | Documented family workflow with one or two practice priorities | Human-led coaching process |
+| Six-category coaching rubric | A documented review guide | Not an automated or scientifically calibrated score |
+| 2D pose overlay and measurements | Body landmarks; knee/elbow angles; shoulder/hip line bearings; torso lean | Implemented in the public script; real-swing accuracy has not been validated by the public tests |
+| Annotated video and CSV | Frame-level measurements for each processed video | Timing corresponds to that video's frame index and reported frame rate; no cross-camera synchronization |
+| Side/Back and Tee/Toss review | Separately recorded views compared manually | No view synchronization or fusion in the public script |
+| Contact detection, automatic six-category scoring, AI reports | Not implemented in the public V3 script | Workflow documentation is not an implemented service |
+| Software verification | Synthetic geometry, mocked landmarks, and a non-person model smoke test | These checks do not establish real-swing measurement accuracy or coaching benefit |
+
+**Evidence you can inspect:** [source code](src/process_hitting_video.py), [documented release checks](docs/release_checks.md), and [synthetic sample CSV](data/sample_telemetry.csv). The CSV illustrates a proposed schema; it is not output from a real swing or a demonstration of automatic event detection. A real-swing demo from this public script has not yet been published.
+
 ## Start here for families
 
 Start with the one-page, no-code family guide. A phone, a safe practice space, and an adult are enough for the basic record-and-retest loop; the Python prototype is optional.
@@ -21,8 +41,8 @@ The goal is not to build a "perfect swing" model. The goal is to create a method
 ## What we have done so far
 
 ### Phase I - video coaching + retest
-- Project-reported participation: 12 youth players.
-- Project-reported follow-up: 7 completed at least one retest.
+- As of the October 21, 2026 project-record review: 12 youth-player profiles and 7 with a documented baseline-to-retest comparison. These are coaching-record counts, not a software-validation sample.
+- Translations and alternate report versions are not additional players or retests. Vincent’s self-analysis is separate from the 12 youth profiles.
 - We used a six-category scoring rubric.
 - Players received one or two practice priorities, then recorded again later.
 
@@ -33,17 +53,21 @@ Phase I produced a reusable family recording workflow and rules for evidence-bas
 
 The protocol uses 8-10 swings at baseline and retest, one safe fixed side view as the minimum, optional additional views, one or two practice targets, and consistent retesting. Its report rules require traceable evidence, the same scoring rubric, clear uncertainty, and human review.
 
-This is a practical methods output. The guide contains no participant scores or measured improvement estimates; it does not independently verify the project-reported 12 participants and 7 retests. Individual participant records are not included in this public starter.
+This is a practical methods output. The guide contains no participant scores or measured improvement estimates; it does not independently verify those participation counts or establish a causal training effect. Individual participant records are not included in this public starter.
 
 ### Phase II - movement data from ordinary video
-Current prototype:
-1. MediaPipe Pose detects body landmarks.
-2. Project code calculates selected **2D** movement measurements.
-3. Annotated video + synchronized CSV telemetry are exported.
-4. Side/Back and Tee/Toss views are compared.
-5. AI may help organize evidence and draft a report.
-6. Vincent reviews the evidence and selects one or two training priorities.
-7. The player practices and retests.
+The public Python script:
+1. Uses the off-the-shelf MediaPipe Pose detector to estimate body landmarks.
+2. Calculates selected **2D image-plane** movement measurements.
+3. Exports annotated video and a corresponding frame-level CSV for each input video.
+
+In the coaching workflow, Vincent compares separately recorded Side/Back and Tee/Toss views manually. The public script does not synchronize or fuse views. AI tools may help organize evidence and draft reports outside this script; Vincent reviews the evidence and selects one or two training priorities before the player practices and retests.
+
+## Public Python Prototype vs. Local Coaching App
+
+This repository contains the experimental **V3 Python measurement prototype**. The separately developed local coaching app has its own versions and testing process; it is not the same product or a packaged release of this repository.
+
+The [app status page](https://www.futurestarsbaseballclub.org/app.html) describes that separate work. App features, screenshots, and test results must not be treated as evidence of what this public script implements. No app binary or app feature validation is included here. See [AI-assisted analysis boundaries](docs/ai_assisted_analysis.md).
 
 ## Simple project loop
 

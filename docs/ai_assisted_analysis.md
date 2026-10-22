@@ -2,6 +2,14 @@
 
 AI is experimental in this project.
 
+## Public code and separate app
+
+The public V3 Python script implements selected 2D body measurements, annotated video, and per-frame CSV export. It does not implement contact-frame detection, automatic six-category scoring, synchronized multi-camera analysis, or an AI report service.
+
+The separately developed local coaching app has its own versions and testing history. Its interface and reported capabilities are not features of this repository unless matching code and tests are added here. Refer to the [separate app status page](https://www.futurestarsbaseballclub.org/app.html) for updates; no app binary or validation of its features is included in this repository.
+
+The workflow below describes intended human-reviewed use of external AI assistance, not functions implemented by the Python script. Software checks on synthetic/mock data do not validate an AI report or a real swing measurement.
+
 ## Intended use
 - Organize evidence from multiple views
 - Summarize baseline vs retest changes
