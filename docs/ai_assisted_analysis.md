@@ -32,6 +32,6 @@ Vincent reviews the final coaching recommendation.
 
 AI should be allowed to return: **not enough information**.
 
-This file describes a human-reviewed workflow. The repository does not implement an AI reporting service or include an approved drill library. Do not send participant videos, reports, or telemetry to a third-party AI service without specific permission for that data and destination. Public demonstrations use synthetic examples only.
+This file describes a human-reviewed workflow. The repository does not implement an AI reporting service or include an approved drill library. Do not send participant videos, reports, or telemetry to a third-party AI service without specific permission for that data and destination. The family-authorized Leo coaching case is a separate real-footage example, not an implemented AI report service or public-script validation. Other public examples use synthetic data.
 
 The [Phase I family guide and AI report rules](phase_i_family_guide.md) provide the detailed report structure and optional prompt. A heading such as “What Improved Most” does not imply an improvement occurred; report no supported gain when that is what the evidence shows.
