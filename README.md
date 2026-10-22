@@ -19,6 +19,8 @@ This project is led by Vincent's **baseball coaching questions and system goals*
 
 **Design goal:** enable ordinary families to study their swings using simple, affordable equipment. That goal is still being tested; the software is not a validated consumer performance service. AI-drafted explanations are hypotheses to review, not proof that a movement or drill is correct.
 
+**[Project roles, evidence, and attribution →](docs/project_roles_and_evidence.md)** — a short guide to what Vincent, AI/Agent tools, family support, the public code, and the separate coaching app each contribute. It also lists exactly which claims the current records do and do not support.
+
 ## At a glance
 
 The project connects a human-led coaching and retesting method with an experimental Python tool for selected 2D movement measurements. The public prototype is not a validated biomechanics system or a fully automated coaching application.
@@ -44,6 +46,8 @@ The project connects a human-led coaching and retesting method with an experimen
 Selected side-tee clips compare August 12 and September 26, 2026. The report's six-category rating changes from **34/60 to 38/60**; the baseline was scored retrospectively. This is a human-reviewed, AI-assisted-report coaching case, not automatic scoring or proof of a training effect. Vincent's role was the coaching observations and priorities; AI tools helped the broader analysis and software workflow. The archived pose-overlay clip has an unverified runtime version and is not a reproduced run of this public script. Published with Leo's family's authorization; the media is not covered by the code's MIT license.
 
 ## Start here for families
+
+**You do not need to run Python to try the basic idea.** Record a few swings safely with a phone, review the same view consistently, choose one small practice goal, and record again. Compare footage carefully and accept an outcome of “unchanged” or “not enough information.” Advanced pose measurements are optional and experimental.
 
 Start with the one-page, no-code family guide. A phone, a safe practice space, and an adult are enough for the basic record-and-retest loop; the Python prototype is optional.
 
