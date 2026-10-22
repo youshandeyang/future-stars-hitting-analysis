@@ -8,6 +8,17 @@ A student-led, low-cost project exploring how ordinary home video can help young
 
 **Project website:** [Coaching-to-coding overview](https://www.futurestarsbaseballclub.org/ai-analysis.html)
 
+## Project roles and AI assistance
+
+This project is led by Vincent's **baseball coaching questions and system goals**, with family support and extensive help from AI tools and agents for software implementation. It should not be represented as a Python program written independently by Vincent.
+
+- **Vincent's contribution:** observed difficulties while coaching younger hitters; proposed a low-cost phone/video-based recording, feedback, practice and retest process; contributed baseball-specific observations and training priorities; and helps evaluate whether reports are useful and consistent with the footage.
+- **Family support:** assisted with cameras, coordination, materials and project organization. Vincent has described the project as something he began with his father.
+- **AI/Agent contribution:** assisted with generating, modifying and debugging Python code, drafting software documentation, and assembling parts of the analysis/report workflow. Vincent has not learned independent programming and does not claim to have coded the software himself.
+- **Existing tools:** MediaPipe Pose is a third-party pose detector, not a model trained by this project.
+
+**Design goal:** enable ordinary families to study their swings using simple, affordable equipment. That goal is still being tested; the software is not a validated consumer performance service. AI-drafted explanations are hypotheses to review, not proof that a movement or drill is correct.
+
 ## At a glance
 
 The project connects a human-led coaching and retesting method with an experimental Python tool for selected 2D movement measurements. The public prototype is not a validated biomechanics system or a fully automated coaching application.
@@ -30,7 +41,7 @@ The project connects a human-led coaching and retesting method with an experimen
 
 **[Watch the interactive case study](https://www.futurestarsbaseballclub.org/leo-coaching-demo/)** · [Source notes and local viewing](examples/leo-coaching-demo/README.md)
 
-Selected side-tee clips compare August 12 and September 26, 2026. The report's six-category rating changes from **34/60 to 38/60**; the baseline was scored retrospectively. This is a human-reviewed coaching case, not automatic scoring or proof of a training effect. The archived pose-overlay clip has an unverified runtime version and is not a reproduced run of this public script. Published with Leo's family's authorization; the media is not covered by the code's MIT license.
+Selected side-tee clips compare August 12 and September 26, 2026. The report's six-category rating changes from **34/60 to 38/60**; the baseline was scored retrospectively. This is a human-reviewed, AI-assisted-report coaching case, not automatic scoring or proof of a training effect. Vincent's role was the coaching observations and priorities; AI tools helped the broader analysis and software workflow. The archived pose-overlay clip has an unverified runtime version and is not a reproduced run of this public script. Published with Leo's family's authorization; the media is not covered by the code's MIT license.
 
 ## Start here for families
 
@@ -42,7 +53,7 @@ The guide covers safe camera placement, tee or adult toss, choosing one cue, rep
 
 ## Why this project exists
 
-Future Stars began with a practical coaching problem: young players are often told what to change, but it is hard for them to see whether the movement actually changed. We started with simple video review and retesting. Phase II now explores whether ordinary Side/Back, Tee/Toss video can also produce simple, repeatable movement measurements.
+Future Stars began with a practical coaching problem. At a youth session, Vincent repeatedly corrected a hitter's foot position, but the player returned to the same stance on the next swing. That raised a question: how could a player **see and understand** the change instead of just hearing the same cue again? We started with simple video review and retesting. Phase II now explores whether ordinary Side/Back, Tee/Toss video can also produce simple, repeatable movement measurements.
 
 The goal is not to build a "perfect swing" model. The goal is to create a method that is affordable, understandable, repeatable, and honest about its limits.
 
