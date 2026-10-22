@@ -22,7 +22,15 @@ The project connects a human-led coaching and retesting method with an experimen
 | Contact detection, automatic six-category scoring, AI reports | Not implemented in the public V3 script | Workflow documentation is not an implemented service |
 | Software verification | Synthetic geometry, mocked landmarks, and a non-person model smoke test | These checks do not establish real-swing measurement accuracy or coaching benefit |
 
-**Evidence you can inspect:** [source code](src/process_hitting_video.py), [documented release checks](docs/release_checks.md), and [synthetic sample CSV](data/sample_telemetry.csv). The CSV illustrates a proposed schema; it is not output from a real swing or a demonstration of automatic event detection. A real-swing demo from this public script has not yet been published.
+**Evidence you can inspect:** [source code](src/process_hitting_video.py), [documented release checks](docs/release_checks.md), and [synthetic sample CSV](data/sample_telemetry.csv). The CSV illustrates a proposed schema; it is not output from a real swing or a demonstration of automatic event detection. A reproducible real-swing run of this public script has not yet been published. The separately labeled coaching case study below uses real footage and report-based scores.
+
+## Real coaching case study: Leo
+
+[![Leo baseline and retest: 34/60 to 38/60](examples/leo-coaching-demo/preview.png)](https://www.futurestarsbaseballclub.org/leo-coaching-demo/)
+
+**[Watch the interactive case study](https://www.futurestarsbaseballclub.org/leo-coaching-demo/)** · [Source notes and local viewing](examples/leo-coaching-demo/README.md)
+
+Selected side-tee clips compare August 12 and September 26, 2026. The report's six-category rating changes from **34/60 to 38/60**; the baseline was scored retrospectively. This is a human-reviewed coaching case, not automatic scoring or proof of a training effect. The archived pose-overlay clip has an unverified runtime version and is not a reproduced run of this public script. Published with Leo's family's authorization; the media is not covered by the code's MIT license.
 
 ## Start here for families
 
@@ -79,7 +87,7 @@ The [app status page](https://www.futurestarsbaseballclub.org/app.html) describe
 - Current joint/tilt values are 2D image-based measurements, not lab-grade 3D biomechanics.
 - Reference ranges are context, not universal youth standards.
 - AI-generated explanations are hypotheses unless they are directly supported by video/data.
-- This public release contains no participant media or individual participant results. Its data example is synthetic.
+- The telemetry sample is synthetic. The separately labeled Leo coaching case contains family-authorized footage and report-based scores; it is not a code-validation dataset.
 - "Not enough information" is an acceptable result.
 
 ## Prototype status and local use
@@ -99,7 +107,7 @@ python src/process_hitting_video.py --input path/to/your_video.mp4 --output_dir 
 
 On Windows, activate with `.venv\Scripts\activate` instead. MediaPipe may download its Heavy pose model on first use; model weights are not included in this repository. The notebook does not automatically fetch the repository into Colab.
 
-The script writes annotated video and frame-level CSV files. These outputs retain participant information and must stay private. The annotated video is not anonymized by adding a skeleton overlay. No public example video is included.
+The script writes annotated video and frame-level CSV files. These outputs retain participant information and require specific publication permission before sharing. The annotated video is not anonymized by adding a skeleton overlay. The Leo case includes selected authorized clips; no corresponding reproducible public-script run or CSV is claimed.
 
 For a data-only example, inspect [the synthetic CSV](data/sample_telemetry.csv). Its event labels and identifiers illustrate a proposed review schema; they are not emitted by the current script. See [telemetry schema](docs/telemetry_schema.md).
 

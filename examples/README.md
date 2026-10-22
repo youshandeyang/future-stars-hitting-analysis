@@ -1,5 +1,6 @@
 # Examples
 
-The public V3 release includes synthetic data only, documented in docs/telemetry_schema.md. No example participant video is included.
+- [Leo coaching case study](leo-coaching-demo/README.md): family-authorized real footage, six-category report comparison, and a separately labeled archived overlay. Not a reproduced run of the public Python script.
+- [Synthetic telemetry CSV](../data/sample_telemetry.csv): illustrative schema data, not a real-player measurement or actual script output.
 
-Do not add real participant media, individual reports, or telemetry here. A renamed file or skeleton overlay is not anonymization. Review notebook outputs, metadata, filenames, and commit history before any public upload.
+Only the specifically authorized Leo demo media is included. Other participant media, reports, and telemetry remain private. A skeleton overlay is not anonymization. See [data policy](../DATA_POLICY.md).
