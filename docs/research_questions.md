@@ -10,3 +10,7 @@
 8. How can AI summarize evidence without turning uncertainty into false confidence?
 9. What parts of the method can a parent reproduce without a coach present?
 10. Which metrics should be removed because they are too noisy or not useful?
+11. Can a parent use the record–review–practice–retest routine with only a phone and a safe, fixed camera position? What setup steps are confusing?
+12. Which added measurements, if any, improve practical coaching decisions enough to justify their time and complexity?
+
+These are **questions for future testing**, not experiments claimed as completed or choices already confirmed by Vincent.
